@@ -29,7 +29,6 @@ module.exports =
         messsages = []
 
         for typeKey, typeLabel of @types
-          console.log typeKey, result[typeKey]
           continue unless result[typeKey]
 
           for messsage in result[typeKey]

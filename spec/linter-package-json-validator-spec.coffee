@@ -4,11 +4,11 @@ PJVProvider = require '../lib/package-json-validator-provider'
 
 describe "Lint package.json", ->
   beforeEach ->
-    waitsForPromise -> atom.packages.activatePackage('linter-less')
+    waitsForPromise -> atom.packages.activatePackage('linter-package-json-validator')
     resetConfig()
 
   describe "Other json files", ->
-    it 'should only lint package.json files', ->
+    it 'should not lint other.json files', ->
 
       waitsForPromise ->
         atom.workspace.open('./files/other.json')
@@ -19,11 +19,11 @@ describe "Lint package.json", ->
 
 
   describe "package.json - npm", ->
-    it 'should only lint package.json files', ->
+    it 'should lint package.json files', ->
 
       waitsForPromise ->
         atom.workspace.open('./files/package.json')
           .then (editor) -> PJVProvider.lint(editor)
           .then (messages) ->
 
-            expect(messages.length).notEqual(0)
+            expect(messages.length).toNotEqual(0)
