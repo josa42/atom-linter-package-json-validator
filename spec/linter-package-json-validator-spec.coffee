@@ -16,3 +16,14 @@ describe "Lint package.json", ->
           .then (messages) ->
 
             expect(messages.length).toEqual(0)
+
+
+  describe "package.json - npm", ->
+    it 'should only lint package.json files', ->
+
+      waitsForPromise ->
+        atom.workspace.open('./files/package.json')
+          .then (editor) -> PJVProvider.lint(editor)
+          .then (messages) ->
+
+            expect(messages.length).notEqual(0)

@@ -4,4 +4,4 @@
 module.exports.resetConfig = ->
 
   Object.keys(config).forEach (key) ->
-    atom.config.set("linter-less.#{key}", config[key].default)
+    atom.config.set("linter-linter-package-json-validator.#{key}", config[key].default)
