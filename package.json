@@ -1,0 +1,24 @@
+{
+  "name": "linter-package-json-validator",
+  "main": "./lib/init",
+  "version": "2.0.3",
+  "description": "Lint `package.json` on the fly, using package-json-validator",
+  "repository": "https://github.com/josa42/atom-linter-package-json-validator",
+  "license": "MIT",
+  "scripts": {
+    "lint": "coffeelint lib"
+  },
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+    "package-json-validator": "^0.6.0"
+  },
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "1.0.0": "provideLinter"
+      }
+    }
+  }
+}
