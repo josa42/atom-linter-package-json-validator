@@ -4,6 +4,8 @@ PJV = require('package-json-validator').PJV
 
 module.exports =
 
+  name: "package-json-validator"
+
   grammarScopes: ['source.json']
 
   scope: 'file'
