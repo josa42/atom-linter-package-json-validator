@@ -20,6 +20,6 @@ module.exports =
   activate: ->
     console.log 'activate linter-package-json-validator' if atom.inDevMode()
 
-    packageDeps.install 'package-json-validator'
+    packageDeps.install 'linter-package-json-validator'
 
   provideLinter: -> PJVProvider
