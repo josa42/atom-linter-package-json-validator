@@ -1,7 +1,7 @@
 {
   "name": "linter-package-json-validator",
   "main": "./lib/init",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Lint `package.json` on the fly, using package-json-validator",
   "repository": "https://github.com/josa42/atom-linter-package-json-validator",
   "license": "MIT",
