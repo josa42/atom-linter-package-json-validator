@@ -1,6 +1,7 @@
 fs = require "fs"
 path = require "path"
 PJVProvider = require './package-json-validator-provider'
+packageDeps = require 'atom-package-deps'
 
 module.exports =
 
@@ -19,9 +20,6 @@ module.exports =
   activate: ->
     console.log 'activate linter-package-json-validator' if atom.inDevMode()
 
-    if not atom.packages.getLoadedPackage 'linter'
-      atom.notifications.addError """
-        [linter-package-json-validator] `linter` package not found, please install it
-      """
+    packageDeps.install 'linter-node markdownlint'
 
   provideLinter: -> PJVProvider
