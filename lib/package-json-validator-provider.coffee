@@ -49,8 +49,8 @@ module.exports =
       warnings: @config 'show_warnings', true
       recommendations: @config 'show_recommendations', true
 
-
     callback PJV.validate(text, spec, options)
 
   config: (key, defaultValue = null) ->
-    atom.config.get("linter-linter-package-json-validator.#{key}") || defaultValue
+    val = atom.config.get("linter-package-json-validator.#{key}")
+    return val is undefined ? defaultValue : val
