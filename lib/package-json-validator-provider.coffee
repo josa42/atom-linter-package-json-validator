@@ -52,5 +52,7 @@ module.exports =
     callback PJV.validate(text, spec, options)
 
   config: (key, defaultValue = null) ->
-    val = atom.config.get("linter-package-json-validator.#{key}")
-    return val is undefined ? defaultValue : val
+    value = atom.config.get("linter-package-json-validator.#{key}")
+
+    return defaultValue if value is undefined
+    return value
