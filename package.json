@@ -6,7 +6,7 @@
   "repository": "https://github.com/josa42/atom-linter-package-json-validator",
   "license": "MIT",
   "scripts": {
-    "lint": "coffeelint lib"
+    "lint": "eslint ."
   },
   "engines": {
     "atom": ">0.50.0"
@@ -24,5 +24,9 @@
         "1.0.0": "provideLinter"
       }
     }
+  },
+  "devDependencies": {
+    "babel-eslint": "^4.1.8",
+    "eslint": "^2.1.0"
   }
 }
