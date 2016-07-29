@@ -2,7 +2,7 @@
   "name": "linter-package-json-validator",
   "main": "./lib/init",
   "version": "1.0.1",
-  "description": "Lint `package.json` on the fly, using package-json-validator",
+  "description": "Lint `package.json` on the fly using package-json-validator and validate dependencies using nsp",
   "repository": "https://github.com/josa42/atom-linter-package-json-validator",
   "license": "MIT",
   "scripts": {
@@ -13,7 +13,9 @@
   },
   "dependencies": {
     "atom-package-deps": "^4.0.1",
-    "package-json-validator": "^0.6.1"
+    "package-json-validator": "^0.6.1",
+    "nsp": "^2.6.1",
+    "loophole": "^1.1.0"
   },
   "package-deps": [
     "linter"
