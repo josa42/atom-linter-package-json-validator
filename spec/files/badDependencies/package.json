@@ -8,8 +8,5 @@
   },
   "author": "foo",
   "license": "ISC",
-  "dependencies": {
-    "jqtree": "1.2.1",
-    "azure": "0.10.4"
-  }
+  "dependencies": { "jqtree": "1.2.1", "azure": "0.10.4" }
 }
