@@ -6,4 +6,5 @@
 [![Dependencies!](https://img.shields.io/david/josa42/atom-linter-package-json-validator.svg?style=flat-square)](https://david-dm.org/josa42/atom-linter-package-json-validator)
 
 This linter plugin for [Linter](https://github.com/AtomLinter/Linter) provides
-an interface to [Package.json validator](http://package-json-validator.com/).
+an interface to [Package.json validator](http://package-json-validator.com/)
+and [nsp](https://nodesecurity.io/).
