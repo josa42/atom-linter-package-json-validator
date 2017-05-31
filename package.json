@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "atom-package-deps": "^4.0.1",
+    "locate-path": "^2.0.0",
     "package-json-validator": "^0.6.1"
   },
   "package-deps": [
@@ -26,7 +27,11 @@
     }
   },
   "devDependencies": {
-    "babel-eslint": "^6.0.1",
-    "eslint": "^2.10.0"
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-node": "^4.2.2",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1"
   }
 }

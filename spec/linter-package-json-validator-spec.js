@@ -1,4 +1,4 @@
-"use babel"
+'use babel'
 
 import { resetConfig, countIn } from './test-helper'
 import path from 'path'
@@ -11,7 +11,6 @@ describe(('Lint package.json'), () => {
   })
 
   describe(('Other json files'), () => {
-
     it(('should not lint other.json files'), () => {
       waitsForPromise(() => {
         return atom.workspace.open(path.join(__dirname, 'files', 'other.json'))
@@ -25,7 +24,6 @@ describe(('Lint package.json'), () => {
 
   describe(('package.json - npm'), () => {
     it(('should lint package.json files'), () => {
-
       waitsForPromise(() => {
         return atom.workspace.open(path.join(__dirname, 'files', 'package.json'))
           .then((editor) => PJVProvider.lint(editor))
@@ -37,7 +35,6 @@ describe(('Lint package.json'), () => {
   })
 
   describe(('package.json - settings'), () => {
-
     it(('should lint package.json and find only errors'), () => {
       atom.config.set('linter-package-json-validator.show_warnings', false)
       atom.config.set('linter-package-json-validator.show_recommendations', false)
@@ -68,7 +65,6 @@ describe(('Lint package.json'), () => {
     })
 
     it(('should lint package.json and find only errors, warnings and recommendations'), () => {
-
       waitsForPromise(() => {
         return atom.workspace.open(path.join(__dirname, 'files', 'package.json'))
           .then((editor) => PJVProvider.lint(editor))
