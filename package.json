@@ -12,8 +12,8 @@
     "atom": ">0.50.0"
   },
   "dependencies": {
-    "atom-package-deps": "^4.0.1",
-    "package-json-validator": "^0.6.1"
+    "atom-package-deps": "^7.0.2",
+    "package-json-validator": "^0.6.3"
   },
   "package-deps": [
     "linter"
@@ -26,12 +26,12 @@
     }
   },
   "devDependencies": {
-    "eslint": "^3.19.0",
-    "eslint-config-standard": "^10.2.1",
-    "eslint-plugin-import": "^2.3.0",
-    "eslint-plugin-node": "^4.2.2",
-    "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^3.0.1",
-    "locate-path": "^2.0.0"
+    "eslint": "^7.13.0",
+    "eslint-config-standard": "^16.0.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.1.0",
+    "locate-path": "^6.0.0"
   }
 }
